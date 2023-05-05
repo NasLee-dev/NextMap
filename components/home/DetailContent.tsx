@@ -18,7 +18,7 @@ export default function DetailContent({ currentStore, expanded }: Props) {
       <div>
         {currentStore.images.slice(0, 3).map((image) => (
           <div
-            style={{ position: 'relative', width: 120, height: 80 }}
+            style={{ position: 'relative', maxWidth: 120, height: 80 }}
             key={image}
           >
             <Image 
