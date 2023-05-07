@@ -29,11 +29,12 @@ export default function HomeHeader() {
           onClick={replaceAndCopyUrl}
           className={styles.box}
           style={{marginRight: 8}}
+          aria-label='현재 위치 클립보드 복사'
           key="button"
     >
       <AiOutlineShareAlt size={20} />
         </button>,
-      <Link href="/feedback" className={styles.box} key="link">
+      <Link href="/feedback" className={styles.box} aria-label='피드백 페이지로 이동' key="link">
         <VscFeedback size={20} />
       </Link>
       ]} 

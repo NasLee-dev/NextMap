@@ -11,7 +11,7 @@ const Header = ({onClickLogo, rightElements}: Props) => {
   return (
     <header className={styles.header}>
       <div className={styles.flexItem}>
-        <Link href="/" className={styles.box} onClick={onClickLogo}>
+        <Link href="/" className={styles.box} onClick={onClickLogo} aria-label="홈으로 이동">
           <Image                              // 용량 최적화
             src="/inflearn.png"
             width={110}
