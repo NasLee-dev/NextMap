@@ -11,6 +11,8 @@ interface Props {
 }
 
 export default function Home({ stores }: Props) {
+
+
   const { initializeStores } = useStores();
 
   useEffect(() => {
@@ -33,7 +35,7 @@ export default function Home({ stores }: Props) {
 };
 
 export async function getStaticProps() {
-  const stores = (await import('../../public/stores.json')).default;
+  const stores = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/stores`).then((response) => response.json())
 
   return {
     props: { stores },
