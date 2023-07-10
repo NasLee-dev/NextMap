@@ -27,11 +27,11 @@ const StoreDetail: NextPage<Props> = ({ store }) => {
   return (
     <>
       <NextSeo 
-        title={store.name}
+        title={store?.name}
         description="Next.js 강의 페이지"
-        canonical={`https://next-map-tau.vercel.app/${store.name}`}
+        canonical={`https://next-map-tau.vercel.app/${store?.name}`}
         openGraph={{
-          url: `https://next-map-tau.vercel.app/${store.name}`
+          url: `https://next-map-tau.vercel.app/${store?.name}`
         }}
       />
       <div
