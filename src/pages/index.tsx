@@ -24,6 +24,10 @@ export default function Home({ stores }: Props) {
       <NextSeo
         title='Next 매장지도'
         description='매장지도'
+        canonical='https://next-map-tau.vercel.app'
+        openGraph={{
+          url: 'https://next-map-tau.vercel.app'
+        }}
       />
       <HomeHeader />
       <main style={{ width: '100%', height: '100%' }}>
